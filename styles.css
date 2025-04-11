@@ -1,0 +1,44 @@
+body {
+    background: linear-gradient(to right, #d0d0d0, #09ea72);
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    text-align: center;
+}
+
+label {
+    font-size: 20px;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+    color: yellow;
+}
+
+input {
+    font-size: 15px;
+    background-color: rgb(255, 119, 8);
+}
+
+textarea {
+    font-size: 15px;
+    background-color: yellow;
+}
+
+select {
+    font-size: 15px;
+    background-color: rgb(5, 250, 221);
+}
+
+h1 {
+    font-size: 40px;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+    color: blue;
+}
+h3 {
+    font-size: 40px;
+    text-shadow: 2px 2px 2px rgba(255, 174, 0, 0.501);
+    color: purple;
+    padding: 25px;
+}

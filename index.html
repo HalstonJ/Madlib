@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>MadLib Practice</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    /* CSS to center the image and add a border */
+    .obligatorykirkpic {
+        display: block;
+        margin: 20px auto;  /* Centers the image */
+        border: 5px solid #4CAF50;  /* Green border */
+        padding: 10px;
+        width: 50%;  /* Adjust image size (can be changed to a fixed size) */
+    }
+</style>
+<body>
+    <h1>Super Cool Awesome Madlib</h1> 
+    <form>
+        <label for="firstName">Enter an awesome name!</label><br>
+        <input type="text" id="firstName" name="firstName"><br><br>
+        
+        <label for="place">Enter a neat place!</label><br>
+        <input type="text" id="place" name="place"><br><br>
+        
+        <label for="noun">Enter something they did there!</label><br>
+        <input type="text" id="noun" name="noun"><br><br>
+        
+        <label for="eat">What did they eat?</label><br>
+        <select id="eat" name="eat">
+            <option value="" disabled selected>-- Select a food --</option>
+            <option value="Pizza">pizza</option>
+            <option value="Sushi">sushi</option>
+            <option value="Chicken">chicken</option>
+            <option value="Noodles">noodles</option>
+        </select> <br><br>
+        
+        
+        <input type="button" value="Create Story" onClick="madLib()">
+    </form>
+<hr>
+
+<h3 id="madLibHere">Once upon a time, <u>____</u> went to <u>____</u>, where they <u>____</u>. Then, they ate <u>____</u>.</h3>
+<img src = "" alt="MadLib Image" class="obligatorykirkpic">
+
+<script>
+    function madLib() {
+        var name = document.getElementById("firstName").value;
+        var place = document.getElementById("place").value;
+        var noun = document.getElementById("noun").value;
+        var eat = document.getElementById("eat").value;
+    
+        // Update the story with the user's input
+        document.getElementById("madLibHere").innerHTML = 
+            "Once upon a time, " + name + " went to " + place + ", where they " + noun + ". Then, they ate " + eat + ".";
+    }
+</script>
+
+</body>
+</html>
